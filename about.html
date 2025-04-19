@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | World Tour and Visa Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .top-navbar {
+      background-color: #000;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .top-navbar span {
+      display: inline-block;
+      background: linear-gradient(to right, white 50%, #000 50%);
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: background-position 0.5s ease-in-out;
+    }
+
+    .top-navbar:hover span {
+      background-position: -100% center;
+    }
+
+    .bottom-navbar {
+      background-color: #444;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      flex-wrap: wrap;
+    }
+
+    .navbar-logo img {
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    .bottom-navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .bottom-navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 6px 12px;
+      transition: background-color 0.3s;
+    }
+
+    .bottom-navbar ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-header h2 {
+      font-size: 2.2rem;
+      color: #333;
+    }
+
+    .about-header p {
+      color: #555;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .about-block {
+      flex: 1 1 45%;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-block h3 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    .about-block p {
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .about-gallery-image {
+      width: 48%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+      height: auto;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 30px 10px 20px;
+      margin-top: 50px;
+    }
+
+    footer .social-icons {
+      margin: 15px 0;
+    }
+
+    footer .social-icons a {
+      margin: 0 10px;
+      color: #ffcc00;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer .social-icons a:hover {
+      color: #fff;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+      }
+
+      .about-block {
+        flex: 1 1 100%;
+      }
+
+      .about-gallery-image {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-navbar">
+    <span>World Tour and Visa Services</span>
+  </div>
+
+  <div class="bottom-navbar">
+    <div class="navbar-logo">
+      <img src="images/logo.jpeg" alt="Company Logo">
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Log In</a></li>
+    </ul>
+  </div>
+
+  <main class="container">
+    <div class="about-header">
+      <h2>About Us</h2>
+      <p>Your gateway to global adventures – professional visa and travel assistance with a personal touch.</p>
+    </div>
+
+    <section class="about-section" id="about-section">
+      <div class="about-block">
+        <h3>Our Mission</h3>
+        <p>We are committed to transforming your travel aspirations into memorable experiences. World Tour and Visa Services delivers end-to-end travel solutions—from stress-free visa processing to thoughtfully curated tour packages for individuals, families, and corporate travelers.</p>
+        <p>Whether you seek cultural exploration, luxury vacations, or international business trips, we help you reach your destination with confidence and convenience.</p>
+      </div>
+
+      <div class="about-block">
+        <h3>Why Choose Us?</h3>
+        <p>Our team of experts provides reliable, timely, and transparent visa services. With years of travel industry experience, we ensure every client receives personalized attention and care. We understand that no two journeys are the same—so we listen, plan, and deliver what matters to you.</p>
+      </div>
+
+      <div class="about-block">
+        <h3>Our Destinations</h3>
+        <div class="image-gallery">
+          <img src="images/12.jpeg" alt="Beach Destination" class="about-gallery-image">
+          <img src="images/100.jpeg" alt="Mountain Destination" class="about-gallery-image">
+          <img src="images/44.jpeg" alt="City Destination" class="about-gallery-image">
+          <img src="images/55.jpeg" alt="Cultural Destination" class="about-gallery-image">
+      
+        </div>
+      </div>
+
+      <div class="about-block">
+        <h3>Explore With Us</h3>
+        <p>We make it easy for you to focus on the experience, not the logistics. Let our team take care of the documents, bookings, and planning—so you can immerse yourself in the adventure.</p>
+        <div class="about-image">
+          <img src="images/destination1.jpeg" alt="World Adventure">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/worldtourvisa" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/worldtourvisa" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com/worldtourvisa" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 World Tour and Visa Services | All Rights Reserved</p>
+    <p>Owner: John Doe</p>
+    <p>Contact: <a href="mailto:info@worldtourvisa.com">info@worldtourvisa.com</a></p>
+  </footer>
+</body>
+</html>

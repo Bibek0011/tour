@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | World Tour and Visa Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+
+  <style>
+   /* Top Navbar (Black with hover animation on company name) */
+    .top-navbar {
+      background-color: #000;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .top-navbar span {
+      display: inline-block;
+      background: linear-gradient(to right, white 50%, #000 50%);
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: background-position 0.5s ease-in-out;
+    }
+
+    .top-navbar:hover span {
+      background-position: -100% center;
+    }
+
+    /* Bottom Navbar (Gray with logo left and menu right) */
+    .bottom-navbar {
+      background-color: #444;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      flex-wrap: wrap;
+    }
+
+    .navbar-logo img {
+      height: 50px;
+    }
+
+    .bottom-navbar ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bottom-navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .bottom-navbar ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Login Form */
+    .login-container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+    }
+
+    .btn-google {
+      background-color: #db4437;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .btn-google:hover {
+      background-color: #c1351d;
+    }
+
+    .footer-link {
+      color: #007bff;
+    }
+
+    .footer-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffffff;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+
+    footer a:hover {
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Top Navbar -->
+  <div class="top-navbar">
+    <span>World Tour and Visa Services</span>
+  </div>
+
+  <!-- Bottom Navbar (logo left, menu right) -->
+  <div class="bottom-navbar">
+    <div class="navbar-logo">
+      <img src="images/logo.jpeg" alt="Company Logo">
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Log In</a></li>
+    </ul>
+  </div>
+
+<!-- Login Form -->
+<div class="login-container">
+  <h2 class="form-title">Login to Your Account</h2>
+  <form action="/login" method="POST">
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required />
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Login</button>
+  </form>
+  <div class="text-center mt-3">
+    <a href="forgot-password.html" class="footer-link">Forgot Password?</a>
+  </div>
+  <div class="text-center mt-3">
+    <span>Or</span>
+  </div>
+  <div class="text-center">
+    <button class="btn-google" onclick="window.location.href='https://accounts.google.com/SignUp'">
+      Connect with Google
+    </button>
+  </div>
+  <div class="text-center mt-3">
+    <p>Don't have an account? <a href="register.html" class="footer-link">Create one</a></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 World Tour and Visa Services | All Rights Reserved</p>
+  <p>📍 Saidchok, Naryanghat, Chitwan, Nepal | 📞 +977 9855051795 | ✉️ contact@worldtourvisa.com</p>
+  <div>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-youtube"></i></a>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

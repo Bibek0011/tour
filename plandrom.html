@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Palindrome Number Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      text-align: center;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #2b2b2b;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Palindrome Number Checker</h2>
+
+  <input type="number" id="numberInput" placeholder="Enter a number">
+  <button onclick="checkPalindrome()">Check</button>
+
+  <div id="result"></div>
+
+  <script>
+    function isPalindromeNumber(number) {
+      const str = number.toString();
+      const reversedStr = str.split('').reverse().join('');
+      return str === reversedStr;
+    }
+
+    function checkPalindrome() {
+      const input = document.getElementById('numberInput').value;
+      const resultDiv = document.getElementById('result');
+
+      if (input === '') {
+        resultDiv.textContent = 'Please enter a number.';
+        return;
+      }
+
+      const number = parseInt(input);
+      if (isPalindromeNumber(number)) {
+        resultDiv.textContent = `${number} is a palindrome number.`;
+      } else {
+        resultDiv.textContent = `${number} is not a palindrome number.`;
+      }
+    }
+  </script>
+
+</body>
+</html>

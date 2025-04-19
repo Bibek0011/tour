@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | World Tour and Visa Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-navbar {
+      background-color: #000;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .bottom-navbar {
+      background-color: #444;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      flex-wrap: wrap;
+    }
+
+    .navbar-logo img {
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    .bottom-navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .bottom-navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 6px 12px;
+      transition: background-color 0.3s;
+    }
+
+    .bottom-navbar ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    .contact-info {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .contact-info img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .map-container {
+      margin-top: 40px;
+      position: relative;
+      height: 400px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .payment-methods img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      color: #333;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 30px 10px 20px;
+      margin-top: 50px;
+    }
+
+    footer .social-icons a {
+      margin: 0 10px;
+      color: #ffcc00;
+    }
+
+    footer .social-icons a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-navbar">
+    <span>World Tour and Visa Services</span>
+  </div>
+
+  <div class="bottom-navbar">
+    <div class="navbar-logo">
+      <img src="images/logo.jpeg" alt="Company Logo">
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Log In</a></li>
+    </ul>
+  </div>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-info">
+      <div>
+        <h2>Our Office</h2>
+        <p><strong>Address:</strong> Saidchok, Naryanghard, Chitwan</p>
+        <p><strong>Phone:</strong> <a href="tel:+9779855051795">+977 9855051795</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@worldtourvisa.com">info@worldtourvisa.com</a></p>
+      </div>
+      <img src="images/office-location.jpg" alt="Office Location">
+    </div>
+
+    <div class="map-container">
+      <h2>Find Us On The Map</h2>
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Saidchok,+Naryanghard,+Chitwan" allowfullscreen></iframe>
+    </div>
+
+    <h2>Payment Methods</h2>
+    <div class="payment-methods">
+      <ul>
+        <li><strong>Cash Payments (In-Office)</strong></li>
+        <li><strong>E-Wallets:</strong> eSewa, Khalti</li>
+        <li><strong>Gift Cards / Partner Vouchers</strong></li>
+        <li><strong>Payment on Arrival</strong></li>
+        <li><strong>Online Payment:</strong> Available via secure gateway</li>
+      </ul>
+      <img src="images/images.png" alt="Online Payment">
+    </div>
+
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/worldtourvisa" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/worldtourvisa" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/9779855051795" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/worldtourvisa" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/worldtourvisa" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/9779855051795" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.twitter.com/worldtourvisa" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 World Tour and Visa Services | All Rights Reserved</p>
+    <p>Contact: <a href="mailto:info@worldtourvisa.com">info@worldtourvisa.com</a></p>
+  </footer>
+</body>
+</html>

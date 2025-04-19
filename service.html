@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | World Tour and Visa Services</title>
+    <style>
+        /* Top Navbar (Black with hover animation on company name) */
+    .top-navbar {
+      background-color: #000;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .top-navbar span {
+      display: inline-block;
+      background: linear-gradient(to right, white 50%, #000 50%);
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: background-position 0.5s ease-in-out;
+    }
+
+    .top-navbar:hover span {
+      background-position: -100% center;
+    }
+
+    /* Bottom Navbar (Gray with logo left and menu right) */
+    .bottom-navbar {
+      background-color: #444;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      flex-wrap: wrap;
+    }
+
+    .navbar-logo img {
+      height: 50px;
+    }
+
+    .bottom-navbar ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bottom-navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .bottom-navbar ul li a:hover {
+      color: #ffcc00;
+    }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-card h3 {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .service-card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <div class="top-navbar">
+    <span>World Tour and Visa Services</span>
+  </div>
+
+  <!-- Bottom Navbar (logo left, menu right) -->
+  <div class="bottom-navbar">
+    <div class="navbar-logo">
+      <img src="images/logo.jpeg" alt="Company Logo">
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Log In</a></li>
+    </ul>
+  </div>
+<main class="container">
+    <div class="service-grid">
+        <div class="service-card">
+            <img src="images/logo.gif" alt="Travel Concierge">
+            <h3>Travel Concierge Services</h3>
+            <p>Personalized itinerary planning, reservation management, and 24/7 travel assistance.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/event.jpeg" alt="Group Travel">
+            <h3>Group Travel Services</h3>
+            <p>Specialized group travel planning for families, corporate groups, and reunions.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/plane.jpg" alt="Airport Transfer">
+            <h3>Airport Transfer Services</h3>
+            <p>Luxury and economy private transfers, shared shuttle services, and VIP transport.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/train.png" alt="Customized Travel">
+            <h3>Customized Travel Experiences</h3>
+            <p>Private yacht rentals, luxury train journeys, and wellness retreats.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/55.jpeg" alt="Business Travel">
+            <h3>Business & MICE Travel</h3>
+            <p>Corporate travel management, event planning, and incentive travel programs.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/cur.gif" alt="Currency Exchange">
+            <h3>Currency Exchange & Foreign Currency Services</h3>
+            <p>Foreign exchange, travel money cards, and financial travel assistance.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/car.jpeg" alt="Car Rental">
+            <h3>Car Rental Services</h3>
+            <p>Wide selection of vehicles, easy booking, competitive rates, and 24/7 customer support.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/car2.jpeg" alt="Luxury Car Rental">
+            <h3>Luxury Car Rental Services</h3>
+            <p>Premium and luxury cars available for rent with chauffeur options and flexible pricing.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 World Tour and Visa Services | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
